@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".detail_expenses">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/expenses_detail_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="-23dp">
+
+        <!--        <com.google.android.material.bottomappbar.BottomAppBar-->
+        <!--            android:id="@+id/fmResidentDetailBottomAppBar"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_gravity="bottom"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/fmResidentDetailName"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/fmResidentDetailName"-->
+        <!--            app:menu="@menu/menu_in_detail" />-->
+
+
+        <TextView
+            android:id="@+id/expenses_detail_type_Label"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/salmon_pink"
+            android:text="Type"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/expenses_detail_type"
+            android:layout_width="244dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="@color/salmon_pink"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/expenses_detail_date_Label"
+            android:layout_width="58dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/salmon_pink"
+            android:text="Date"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/expenses_detail_type_Label"
+            app:layout_constraintTop_toBottomOf="@+id/expenses_detail_type_Label" />
+
+        <TextView
+            android:id="@+id/expenses_detail_date"
+            android:layout_width="244dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/salmon_pink"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/expenses_detail_type"
+            app:layout_constraintStart_toStartOf="@+id/expenses_detail_type"
+            app:layout_constraintTop_toBottomOf="@+id/expenses_detail_type" />
+
+        <TextView
+            android:id="@+id/expenses_detail_time_Label"
+            android:layout_width="63dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/salmon_pink"
+            android:text="Time"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expenses_detail_date_Label" />
+
+
+        <TextView
+            android:id="@+id/expenses_detail_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/salmon_pink"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/expenses_detail_date"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/expenses_detail_date"
+            app:layout_constraintTop_toBottomOf="@+id/expenses_detail_date" />
+
+        <TextView
+            android:id="@+id/expenses_detail_amount_Label"
+            android:layout_width="66dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/salmon_pink"
+            android:text="Amount"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/expenses_detail_time_Label"
+            app:layout_constraintTop_toBottomOf="@+id/expenses_detail_time_Label" />
+
+        <TextView
+            android:id="@+id/expenses_detail_amount"
+            android:layout_width="245dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/salmon_pink"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/expenses_detail_time"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/expenses_detail_time"
+            app:layout_constraintTop_toBottomOf="@+id/expenses_detail_time" />
+
+        <TextView
+            android:id="@+id/expensesDetailComment"
+            android:layout_width="379dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="40dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="No Comment"
+            android:inputType="textMultiLine"
+            android:outlineAmbientShadowColor="@color/salmon_pink"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/expenses_detail_amount"
+            app:layout_constraintHorizontal_bias="0.342"
+            app:layout_constraintStart_toStartOf="@+id/comment_Label"
+            app:layout_constraintTop_toBottomOf="@+id/expenses_detail_amount" />
+
+        <Button
+            android:id="@+id/btn_delete_expenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="12dp"
+            android:text="Delete"
+            app:layout_constraintStart_toStartOf="@+id/expensesDetailComment"
+            app:layout_constraintTop_toBottomOf="@+id/expensesDetailComment" />
+
+        <Button
+            android:id="@+id/btn_update_expenses"
+            android:layout_width="152dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="36dp"
+            android:text="Back To List"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_delete_expenses"
+            app:layout_constraintStart_toEndOf="@+id/btn_delete_expenses"
+            app:layout_constraintTop_toTopOf="@+id/btn_delete_expenses"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/comment_Label"
+            android:layout_width="66dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="12dp"
+            android:text="Comment"
+            app:layout_constraintStart_toStartOf="@+id/expenses_detail_time_Label"
+            app:layout_constraintTop_toBottomOf="@+id/expenses_detail_amount_Label" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

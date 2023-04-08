@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".confirm_add">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/trip_confirm_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="-23dp">
+
+        <!--        <com.google.android.material.bottomappbar.BottomAppBar-->
+        <!--            android:id="@+id/fmResidentDetailBottomAppBar"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_gravity="bottom"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/fmResidentDetailName"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/fmResidentDetailName"-->
+        <!--            app:menu="@menu/menu_in_detail" />-->
+
+        <TextView
+            android:id="@+id/trip_confirm_destination_Label"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Destination"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/trip_confirm_destination"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/trip_confirm_name_Label"
+            app:layout_constraintTop_toBottomOf="@+id/trip_confirm_name_Label" />
+
+        <TextView
+            android:id="@+id/trip_confirm_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/trip_confirm_name_Label"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/trip_confirm_destination"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/trip_confirm_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/trip_confirm_destination_Label"
+            app:layout_constraintTop_toBottomOf="@+id/trip_confirm_name" />
+
+        <TextView
+            android:id="@+id/trip_confirm_name_Label"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Trip Name"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/trip_confirm_date_Label"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Date"
+            app:layout_constraintStart_toStartOf="@+id/trip_confirm_destination_Label"
+            app:layout_constraintTop_toBottomOf="@+id/trip_confirm_destination_Label" />
+
+        <TextView
+            android:id="@+id/trip_confirm_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/trip_confirm_destination"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/trip_confirm_date_Label"
+            app:layout_constraintTop_toBottomOf="@+id/trip_confirm_destination" />
+
+        <TextView
+            android:id="@+id/trip_confirm_description_Label"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Description"
+            app:layout_constraintStart_toStartOf="@+id/trip_confirm_date_Label"
+            app:layout_constraintTop_toBottomOf="@+id/trip_confirm_date_Label" />
+
+        <TextView
+            android:id="@+id/trip_confirm_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/trip_confirm_description_Label"
+            app:layout_constraintTop_toBottomOf="@+id/trip_confirm_date" />
+
+        <TextView
+            android:id="@+id/trip_confirm_accommodation_Label"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Accommodation"
+            app:layout_constraintStart_toStartOf="@+id/trip_confirm_description_Label"
+            app:layout_constraintTop_toBottomOf="@+id/trip_confirm_description_Label" />
+
+        <TextView
+            android:id="@+id/trip_confirm_accommodation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/trip_confirm_description"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/trip_confirm_accommodation_Label"
+            app:layout_constraintTop_toBottomOf="@+id/trip_confirm_description" />
+
+        <TextView
+            android:id="@+id/trip_confirm_vehicle_Label"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Vehicle"
+            app:layout_constraintStart_toStartOf="@+id/trip_confirm_accommodation_Label"
+            app:layout_constraintTop_toBottomOf="@+id/trip_confirm_accommodation_Label" />
+
+        <TextView
+            android:id="@+id/trip_confirm_vehicle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="28dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/trip_confirm_accommodation"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/trip_confirm_vehicle_Label"
+            app:layout_constraintTop_toBottomOf="@+id/trip_confirm_accommodation" />
+
+        <Switch
+            android:id="@+id/confirm_risk_assessment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Required Risk Assessment"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/trip_confirm_vehicle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/trip_confirm_vehicle_Label"
+            app:layout_constraintTop_toBottomOf="@+id/trip_confirm_vehicle"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/buttonConfirm_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ConFirm"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonConfirm_cancel"
+            app:layout_constraintEnd_toEndOf="@+id/confirm_risk_assessment"
+            app:layout_constraintStart_toEndOf="@+id/buttonConfirm_cancel"
+            app:layout_constraintTop_toTopOf="@+id/buttonConfirm_cancel" />
+
+        <Button
+            android:id="@+id/buttonConfirm_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="56dp"
+            android:text="Cancel"
+            app:layout_constraintStart_toStartOf="@+id/confirm_risk_assessment"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_risk_assessment" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
